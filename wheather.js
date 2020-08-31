@@ -1,4 +1,5 @@
 const wheather = document.querySelector(".js-wheather");
+const geo_location = document.querySelector(".js-location");
 
 const API_KEY = "25a9a94f73898f55f849ed6883521984";
 const COORDS = "coords";
@@ -13,7 +14,8 @@ function getWeather(lat, lng) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
-      wheather.innerText = `${temperature} @ ${place}`;
+      wheather.innerText = `Wheather : ${Math.floor(temperature)}°C`;
+      geo_location.innerText = `Location : ${place}`;
     });
 }
 

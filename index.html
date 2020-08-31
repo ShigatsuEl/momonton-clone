@@ -7,18 +7,26 @@
     <title>Shigatsu Momonton</title>
   </head>
   <body>
-    <div class="js-clock">
-      <h2>00:00</h2>
+    <div class="flash-box"></div>
+    <div class="content">
+      <div class="js-clock">
+        <h2>00:00</h2>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" class="form-name" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm toDoForm">
+        <input
+          type="text"
+          placeholder="Write a To Do"
+          class="toDoForm-submit"
+        />
+      </form>
+      <ul class="js-toDoList toDoList"></ul>
+      <span class="js-wheather wheather"></span>
+      <span class="js-location location"></span>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a To Do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-wheather"></span>
 
     <script src="index.js"></script>
     <script src="clock.js"></script>
@@ -26,5 +34,9 @@
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="wheather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
